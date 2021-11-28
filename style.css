@@ -2,30 +2,48 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Convergence", sans-serif;
 }
 body {
     background-color: #e3e4e0;
+    
 }
 
+#add {
+    font-size: 1rem;
+}
+
+h1 {
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+
+}
 h1, form {
-    min-height: 20vh;
+    min-height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-form input, form button {
+form input{
     padding: 0.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border: none;
     background-color: #768f7b;
     outline: none;
+    border-radius: 0.5rem;
+    min-width: 30%;
 }
-
+    
 form button {
+    margin-left: 10px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
     color: black;
     background-color: #d4c8be;
     cursor: pointer;
+    border-radius: 0.5rem;
 }
 
 #list {
@@ -37,17 +55,17 @@ form button {
 #list-elements {
     min-width: 30%;
     list-style: none;
+    margin-top: 0.5rem;
 }
 
 .todo-div {
-    margin: 0.5rem;
+    margin: 1rem;
     background-color: #768f7b;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: black;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-
+    border-radius: 0.5rem;
 }
 
 .todo-div li {
