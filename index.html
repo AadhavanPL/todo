@@ -7,20 +7,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>todo</title>
 </head>
 <body>
-    <h1>todo</h1>
+    <h1 style="color: #768f7b;">todo</h1>
     <form>
         <input id = "input-box" type = "text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus>
         <button id = "add" type = "submit">&#10133</button>
     </form>
     <div id = "list">
         <ul id = "list-elements"></ul>
-        
     </div>
 
+    <!--Clock-->
 
+    <div class="setters">
+        <div class="minutes-set">
+          <button data-setter="minutes-plus">+</button>
+          <button data-setter="minutes-minus">-</button>
+        </div>
+        <div class="seconds-set">
+          <button data-setter="seconds-plus">+</button>
+          <button data-setter="seconds-minus">-</button>
+        </div>
+    </div>
+    <div class="circle">
+        <svg width="300" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+           <g transform="translate(110,110)">
+              <circle r="100" class="e-c-base"/>
+              <g transform="rotate(-90)">
+                 <circle r="100" class="e-c-progress"/>
+                 <g id="e-pointer">
+                    <circle cx="100" cy="0" r="8" class="e-c-pointer"/>
+                 </g>
+              </g>
+           </g>
+        </svg>
+    </div>
+    <div class="controlls">
+        <div class="display-remain-time">00:30</div>
+        <button class="play" id="pause"></button>
+    </div>
+
+    <!--End of clock-->
+      
     <script src = ./app.js></script>
 </body>
 </html>
